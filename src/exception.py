@@ -1,6 +1,5 @@
 import sys # provides various functions and variables used to manipulate different parts of the Python runtime environment
-import logging # provides a standard interface to log from Python programs
-import logger
+from src.logger import logging
 
 
 def error_message_detail(error, error_detail:sys):
