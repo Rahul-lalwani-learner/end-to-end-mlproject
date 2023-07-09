@@ -5,7 +5,7 @@ from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass # This dataclass is used to create a class with attributes and methods
-
+from src.components.data_transformation import DataTransformation, DataTransormationConfig
 
 # we will use dataclass attribute where we will only define variables not methods
 @dataclass 
@@ -46,4 +46,7 @@ class DataIngestion:
 
 if __name__ == "__main__": 
     obj = DataIngestion()
-    obj.initiate_data_ingestion()
+    train_data , test_data = obj.initiate_data_ingestion()
+
+    data_transformation = DataTransformation()
+    data_transformation.initiate_data_transformation(train_data, test_data)
