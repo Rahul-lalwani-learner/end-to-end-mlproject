@@ -1,0 +1,79 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Heading styles */
+h1 {
+  padding-top: 20px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+.login-container h1{
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container styles */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prediction {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .login-container {
+      max-width: 300px;
+  }
+}
